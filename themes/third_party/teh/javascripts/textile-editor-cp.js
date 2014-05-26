@@ -5,6 +5,9 @@ $(document).ready(function($) {
 
 		var canvas = $(this).attr("name");
 		
+		// Add ID attribute.
+		$(this).attr('id', canvas);
+
 		if(typeof(EE.teh_options.fields) != "undefined" && typeof(EE.teh_options.fields[canvas]) != "undefined") {
 			
 			var id = EE.teh_options.fields[canvas];
